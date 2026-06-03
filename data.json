@@ -1,0 +1,56 @@
+[
+  {
+    "id": 1,
+    "title": "Cosmic Drift",
+    "genre": "Sci-Fi",
+    "year": 2024,
+    "rating": 8.4,
+    "votes": "142K",
+    "description": "A lone astronaut drifts through a dying galaxy searching for the last habitable world."
+  },
+  {
+    "id": 2,
+    "title": "Crimson Petal",
+    "genre": "Drama",
+    "year": 2023,
+    "rating": 7.6,
+    "votes": "98K",
+    "description": "A botanist unravels a century-old family secret hidden deep within an ancient greenhouse."
+  },
+  {
+    "id": 3,
+    "title": "Tidal Protocol",
+    "genre": "Thriller",
+    "year": 2024,
+    "rating": 8.1,
+    "votes": "210K",
+    "description": "A deep-sea researcher discovers a signal that could rewrite the history of human civilization."
+  },
+  {
+    "id": 4,
+    "title": "Golden Hour",
+    "genre": "Romance",
+    "year": 2023,
+    "rating": 7.2,
+    "votes": "76K",
+    "description": "Two strangers meet during a cross-country road trip and question everything they thought they wanted."
+  },
+  {
+    "id": 5,
+    "title": "Blood Static",
+    "genre": "Horror",
+    "year": 2024,
+    "rating": 7.9,
+    "votes": "134K",
+    "description": "A small town is terrorized by a creature that only exists in the static between TV channels."
+  },
+  {
+    "id": 6,
+    "title": "Null Island",
+    "genre": "Action",
+    "year": 2024,
+    "rating": 7.4,
+    "votes": "189K",
+    "description": "An elite operative is dropped onto a classified island with no map, no backup, and no exit."
+  }
+]

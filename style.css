@@ -1,0 +1,174 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', system-ui, sans-serif;
+  background: #0f0e17;
+  color: #fffffe;
+  min-height: 100vh;
+}
+
+.page {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 2.5rem 1.5rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.logo {
+  font-size: 2.8rem;
+  font-weight: 800;
+  letter-spacing: -1px;
+  color: #ff8906;
+}
+
+.tagline {
+  color: #a7a9be;
+  margin-top: 0.3rem;
+  font-size: 0.85rem;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.5rem;
+}
+
+
+.card {
+  background: #1b1b2f;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+.poster {
+  height: 160px;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  padding: 0.8rem;
+}
+
+.poster-1 { background: linear-gradient(135deg, #1a1a2e 0%, #4a00e0 100%); }
+.poster-2 { background: linear-gradient(135deg, #1a1a2e 0%, #c0392b 100%); }
+.poster-3 { background: linear-gradient(135deg, #1a1a2e 0%, #00b09b 100%); }
+.poster-4 { background: linear-gradient(135deg, #1a1a2e 0%, #e67e22 100%); }
+.poster-5 { background: linear-gradient(135deg, #1a1a2e 0%, #8e44ad 100%); }
+.poster-6 { background: linear-gradient(135deg, #1a1a2e 0%, #1c6dd0 100%); }
+
+.genre-tag {
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(4px);
+  color: #fff;
+  font-size: 0.68rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  padding: 0.25rem 0.65rem;
+  border-radius: 20px;
+}
+
+.year-badge {
+  position: absolute;
+  top: 0.8rem;
+  right: 0.8rem;
+  color: rgba(255, 255, 255, 0.65);
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.card-body {
+  padding: 1.25rem;
+}
+
+.title {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #fffffe;
+  margin-bottom: 0.65rem;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rating-row {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-bottom: 0.75rem;
+}
+
+.star {
+  color: #ff8906;
+  font-size: 1rem;
+}
+
+.score {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #fffffe;
+}
+
+.votes {
+  color: #a7a9be;
+  font-size: 0.8rem;
+  margin-left: auto;
+}
+
+.bar-track {
+  height: 5px;
+  background: #2e2e4a;
+  border-radius: 99px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+}
+
+.bar {
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(90deg, #ff8906, #f25f4c);
+  border-radius: 99px;
+  transition: width 0.9s cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.description {
+  font-size: 0.82rem;
+  color: #a7a9be;
+  line-height: 1.6;
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease, opacity 0.3s ease;
+}
+
+.card.active .description {
+  max-height: 80px;
+  opacity: 1;
+}
+
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 480px) {
+  .grid { grid-template-columns: 1fr; }
+  .logo { font-size: 2rem; }
+}
